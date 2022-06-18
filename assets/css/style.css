@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(7, 7, 6);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #13293d;
+    color: #fff;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 200%;
+    font-family: 'Righteous', serif;
+  }
+    
+  h2 {
+    display:flex;
+    color:white;
+    justify-content:flex-start;
+    margin: 2% 0;
+    font-size: 180%;
+  }
+  
+  h3 {
+    margin: 2% 0;
+    font-size: 100%;
+  }
+    
+   
+   
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+  }
+  
+  nav a {
+    color: #b9C6ae;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #fff;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  
+  .self img{
+    object-fit: cover;
+    width: 100%;
+    height: 433px;
+  }
+
+  .aboutme-header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .aboutme-main {
+    margin: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .aboutme-main h3 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+
+  .aboutme-main p {
+    margin-bottom: 50px;
+  }
+   
+  /* Work header */
+
+  .work-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 50px;
+  }
+  
+  .work-header h3 {
+    font-size: 2em;
+  }
+  
+  /* Card hovering effects*/
+  /* inspiration: https://codepen.io/NikhilBobade/pen/ExZXaGE */
+  .card:hover * {
+    transform: scale(1.5);
+  /*https://www.tutorialspoint.com/Set-the-speed-of-the-hover-effect-with-CSS */
+    transition-duration: 1s;
+   }
+    
+  .card-container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+  }
+
+        
+  .work-grid {
+     /* grid-template-columns */
+     /*https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+    padding-bottom: 100px;
+  }
+
+  .stack {
+    display: grid;
+  }
+  
+  .stack > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .card {
+    box-shadow: rgb(50, 50, 93) 0px 12px 12px 2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 25px;
+  }
+  
+  .card:nth-child(1) {
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
+    /* matches elements based on their position among a group of siblings.*/
+    grid-column: 1  / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 175px;
+    object-position: top;
+    object-fit: cover;
+    border-radius: 20px;
+       
+  }
+  
+  .card-content {
+    
+    align-self: end;
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+  }
+  
+  .card-title {
+    color: White;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  
+  .card-description {
+    color: White;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: #13293d;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }
+  
+   
+  
+
+  }
