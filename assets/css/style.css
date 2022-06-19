@@ -1,33 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
 * {
     box-sizing: border-box;
-<<<<<<< HEAD
+  }
+
+  :root{
+    --background-color: rgb(0, 0, 0);
+    --textcolor: white;
+    
   }
 
 body {
+    
     min-height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(7, 7, 6);
+    background-color: var(--background-color);
+    
   }
   
   header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: end;
     padding: 1%;
-    background-color: #13293d;
+    background-color:var(--background-color);
     color: #fff;
   }
   
   h1 {
-    color: white;
-    font-size: 200%;
-    font-family: 'Righteous', serif;
+    /* https://www.sliderrevolution.com/resources/css-text-animation/ developer: Hakkam Abdullah */
+    background-image: url(/images/beam.gif);
+	  background-size: cover;
+	  color: transparent;
+	  -moz-background-clip: text;
+	  -webkit-background-clip: text;
+  	font-size: 60px;
+
   }
     
   h2 {
     display:flex;
-    color:white;
+    color:var(--textcolor);
     justify-content:flex-start;
     margin: 2% 0;
     font-size: 180%;
@@ -38,8 +51,13 @@ body {
     font-size: 100%;
   }
     
-   
-   
+  p{
+    color: var(--textcolor);
+    font-size: 20px;
+  }
+  
+  
+
   nav ul {
     display: flex;
     justify-content: space-between;
@@ -53,21 +71,60 @@ body {
   }
   
   nav a:hover {
-    color: #fff;
-  }
-  
-  .container {
-    width: 80%;
-    max-width: 1100px;
-    margin: 0 auto;
+    color: var(--textcolor);
   }
 
-  
-  .self img{
-    object-fit: cover;
-    width: 100%;
-    height: 433px;
+  .main{
+    display: flex;
+    background: url(/images/background.jpg);
+    background-size: cover;
+    background-position: center;
+
   }
+
+  .title {
+    margin: 5%;
+    font-family: "Cairo";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    letter-spacing: 1px;
+    line-height:2
+  }
+  
+   
+  /* icon styling above each section */
+  
+  .icons {
+    /* margin: 10px 0; */
+    display: flex;
+    justify-content:Center;
+    flex-flow: row wrap;
+    font-size: 5rem;
+    color: var(--textcolor);
+    
+  }
+  /* About section  */
+  .container {
+    justify-content: center;
+    margin-top: 50px;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  
+  .container .self {
+    display: flex;
+    justify-content: center;
+  }
+
+  .self img{
+    height: 200px;
+    clip-path: polygon(33.33% 0%, 66.66% 0%, 100% 33.33%, 100% 66.66%, 66.66% 100%, 33.33% 100%, 0 66.66%, 0 33.33%);
+  }
+
 
   .aboutme-header {
     height: 100px;
@@ -75,47 +132,52 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    color: var(--textcolor);
   }
-
+  
   .aboutme-main {
     margin: auto;
-    width: 500px;
+    width: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-
+  
   .aboutme-main h3 {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 2em;
   }
-
+  
   .aboutme-main p {
     margin-bottom: 50px;
   }
-   
+  
   /* Work header */
-
+  
   .work-header {
+    
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100px;
-    margin-bottom: 50px;
+    height: 200px;
+    margin-bottom: 5%;
+    
   }
   
   .work-header h3 {
+    margin-top:5%;
     font-size: 2em;
+    color: var(--textcolor);
   }
   
   /* Card hovering effects*/
   /* inspiration: https://codepen.io/NikhilBobade/pen/ExZXaGE */
   .card:hover * {
     transform: scale(1.5);
-  /*https://www.tutorialspoint.com/Set-the-speed-of-the-hover-effect-with-CSS */
     transition-duration: 1s;
+    /*https://www.tutorialspoint.com/Set-the-speed-of-the-hover-effect-with-CSS */
    }
     
   .card-container {
@@ -144,7 +206,7 @@ body {
   }
 
   .card {
-    box-shadow: rgb(50, 50, 93) 0px 12px 12px 2px,
+    box-shadow: rgb(73, 60, 18) 0px 12px 12px 2px,
       rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 25px;
   }
@@ -182,7 +244,7 @@ body {
   }
   
   .card-description {
-    color: White;
+    color: var(--textcolor);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     font-style: italic;
@@ -193,7 +255,7 @@ body {
     justify-content: center;
     padding: 2%;
     background-color: #13293d;
-    color: #fff;
+    color: var(--textcolor);
   }
   
   @media screen and (max-width: 768px) {
@@ -201,89 +263,4 @@ body {
       flex-direction: column;
     }
   
-   
-  
-
   }
-=======
-    padding: 0;
-    margin: 0;
-}
-
-
-body {
-    flex: auto;
-    
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-p {
-    font-size: 16px;
-}
-
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #243c47;
-    color: #b3b2be;
-}
-
-.header h1 {
-    display: inline-block;
-    font-size: 25px;
-}
-
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.header div ul {
-    list-style-type: none;
-}
-
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-.about {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.work {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.contact {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-.background-image{
-    background-image: url(/images/background.jpg);
-}
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
->>>>>>> c6d67a0c156a9d5274c1c4a0c2abe9fe340b41b5
