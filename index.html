@@ -19,13 +19,12 @@
   </head>
 
   <body>
-    <header>
-      
+    <header> 
       <nav class="navbar">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#Projects">Projects</a></li>
-          <li><a href="Contact#">Contact</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -34,19 +33,17 @@
       <div class="title">
         <h1>Jerrod Linderman</h1>
       </div>
-    
- 
-    
-    
-    
     </section>
+
       <div class="container">
-        <div class="self">
+
+        <div class="self" id="about">
           <img src="/images/Me.jpg" alt="picture of Jerrod Linderman">
         </div>
         <section class="aboutme-header">
           <h3>About Me</h3>
         </section>
+
         <section class="aboutme-main">
            <p>
             Born and raised in Salt lake City, Currently calling Minneapolis, Minnesota home. Have a Wonderful 
@@ -67,22 +64,20 @@
         </div>
            <h3>Projects</h3>
       </section>
-        <div class="container">
+
+      <div class="container">
         <section class="work-grid">
             <article class="card stack">
               <img
               class="card-img"
               src="./images/screenshot.png"
-              alt="Screenshot of Horizeon project"
-              />
+              alt="Screenshot of Horizeon project"/>
               <a href="https://nvmax.github.io/Horizeon-Refactorstudent/"></a>
             <div class="card-content">
               <h3 class="card-title">Horizeon</h3>              
               <p class="card-description">refactored project</p>
             </div>
-            
           </article>
-  
           <article class="card stack">
             <img
               class="card-img"
@@ -93,7 +88,6 @@
               <p class="card-description"><! -- placeholder --></p>
             </div>
           </article>
-  
           <article class="card stack">
             <img
               class="card-img"
@@ -103,8 +97,7 @@
               <h3 class="card-title"><! -- placeholder --></h3>
               <p class="card-description"><! -- placeholder --></p>
             </div>
-          </article>
-  
+          </article>  
           <article class="card stack">
             <img
               class="card-img"
@@ -115,30 +108,36 @@
               <p class="card-description"><! -- placeholder --></p>
             </div>
           </article>
-      </section>
-    </div>
-
-    <div class="container">
-        <section class="contact-form-container" id="contact">
-          <form class="main-form">
-            <h4>Get in touch!</h4>
-            <label for="name">Name:</label>
-            <input type="text" id="name" />
-            <label for="email">Email:</label>
-            <input type="email" id="email" />
-            <label for="message">Message:</label>
-            <input type="textarea" id="message" rows="40" />
-            <button class="btn btn-form">Send</button>
-          </form>
         </section>
-
-        
       </div>
-       
+     
+    <section class="contact-header" id="Contact">
+      <div class="icons" id="Contact">
+        <i class="fa-solid fa-at"></i>
+      </div>    
+        <h3>Contact Me</h3>
+     
+      <div class="contact-container">
+        <form >
+          <label for="fname">First Name</label>
+          <input tabindex="1" type="text" id="fname" name="firstname" placeholder="First Name">
+        
+          <label for="lname">Last Name</label>
+          <input tabindex="2" type="text" id="lname" name="lastname" placeholder="Last Name..">
+        
+          <label for="email">email</label>
+          <input tabindex="3" type="text" id="email" name="email" placeholder="me@email.com">
+                        
+          <label for="subject">Subject</label>
+          <textarea tabindex="4" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       
+          <input tabindex="5" type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+    
         <footer>
           <span>Made by Jerrod Linderman 2022</span>
         </footer>
-        
     </body>
 </html>
