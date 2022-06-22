@@ -9,13 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -24,55 +18,62 @@
       referrerpolicy="no-referrer"
     />
   </head>
-
   <body>
+    <!-- Nav Bar -->
     <header> 
       <nav class="navbar">
         <ul>
-          <li><a href="#about">About</a></li>
+          <li><a href="#About">About</a></li>
           <li><a href="#Projects">Projects</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-
+<!-- Background and styling -->
     <section class="main">
-      <div class="title">
+      <section class="title">
         <h1>Jerrod Linderman</h1>
-      </div>
+      </section>
     </section>
-
-      <div class="container">
-
-        <div class="self" id="about">
+<!-- Code icon section -->
+<section class="codecards" id="About">
+  <section class="codeicons">
+    <i class="fa-brands fa-html5"></i>
+    <i class="fa-brands fa-css3-alt"></i>
+    <i class="fa-brands fa-js-square"></i>
+    <i class="fa-brands fa-node"></i>
+    <i class="fa-brands fa-react"></i>
+  </section>
+</section>
+<!-- about me section -->
+      <section class="container">
+        <section class="self" >
           <img src="/images/Me.jpg" alt="picture of Jerrod Linderman">
-        </div>
+        </section>
         <section class="aboutme-header">
           <h3>About Me</h3>
         </section>
-
+<!-- about me main text section -->
         <section class="aboutme-main">
-           <p>
-            Born and raised in Salt lake City, Currently calling Minneapolis, Minnesota home. Have a Wonderful 
-            Wife Corinne and 2 Beautiful children, Whirlwind Sophia and Little-man Hazen.</p>
-            <p>
-            I have a knack for technology that being hardware or software and always looking to expand my knowledge.
-            </p>
-            <p>   
-            Currently expanding my skills into Web Development to better myself and the future of my family.
+          <p>Born and raised in Salt Lake City, Currently calling Minneapolis, Minnesota home.  Have a Wonderful 
+            wife Corinne and 2 beautiful children, Whirlwind Sophia and Little-man Hazen.
+          </p>
+          <p>I have a knack for technology that being hardware or software and always looking to expand my knowledge.
+          </p>
+          <p>Currently expanding my skills into Web Development to better myself and the future of my family.
           </p>
         </section>
-      </div>
-      
+      </section>
+<!-- Projects section -->
       <section class="work-header" id="Projects">
         
-        <div class="icons" id="Projects">
+        <section class="icons" id="Projects">
           <i class="fa-solid fa-code"></i>
-        </div>
+        </section>
            <h3>Projects</h3>
       </section>
-
-      <div class="container">
+<!-- project grid  -->
+      <section class="container">
         <section class="work-grid">
             <article class="card stack">
               <img
@@ -80,51 +81,50 @@
               src="./images/screenshot.png"
               alt="Screenshot of Horizeon project"/>
               <a href="https://nvmax.github.io/Horizeon-Refactorstudent/"></a>
-            <div class="card-content">
+            <section class="card-content">
               <h3 class="card-title">Horizeon</h3>              
               <p class="card-description">refactored project</p>
-            </div>
+            </section>
           </article>
           <article class="card stack">
             <img
               class="card-img"
               src="./images/comingsoon.jpg"
               alt="coming soon image"/>
-            <div class="card-content">
+            <section class="card-content">
               <h3 class="card-title"><! -- placeholder --></h3>
               <p class="card-description"><! -- placeholder --></p>
-            </div>
+            </section>
           </article>
           <article class="card stack">
             <img
               class="card-img"
               src="./images/comingsoon2.jpeg"
               alt="coming soon image"/>
-            <div class="card-content">
+            <section class="card-content">
               <h3 class="card-title"><! -- placeholder --></h3>
               <p class="card-description"><! -- placeholder --></p>
-            </div>
+            </section>
           </article>  
           <article class="card stack">
             <img
               class="card-img"
               src="./images/comingsoon3.jpg"
               alt="coming soon image"/>
-            <div class="card-content">
+            <section class="card-content">
               <h3 class="card-title"><! -- placeholder --></h3>
               <p class="card-description"><! -- placeholder --></p>
-            </div>
+            </section>
           </article>
         </section>
-      </div>
-     
+      </section>
+<!-- Contact section  -->
     <section class="contact-header" id="Contact">
-      <div class="icons" id="Contact">
+      <section class="icons" id="Contact">
         <i class="fa-solid fa-at"></i>
-      </div>    
+      </section>    
         <h3>Contact Me</h3>
-     
-      <div class="contact-container">
+      <section class="contact-container">
         <form >
           <label for="fname">First Name</label>
           <input tabindex="1" type="text" id="fname" name="firstname" placeholder="First Name">
@@ -140,9 +140,9 @@
       
           <input tabindex="5" type="submit" value="Submit">
         </form>
-      </div>
+      </section>
     </section>
-
+<!-- Footer section -->
         <footer>
           <span>Made by Jerrod Linderman&#8482 2022</span>
         </footer>
