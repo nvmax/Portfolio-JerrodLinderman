@@ -21,10 +21,10 @@ body {
   
   h1 {
     /* https://www.sliderrevolution.com/resources/css-text-animation/ developer: Hakkam Abdullah */
-    background-image: url(/images/beam.gif);
+    background-image: url(../images/beam.gif);
 	  background-size: cover;
 	  color: transparent;
-    -moz-background-clip: text;
+    background-clip: text;
 	  -webkit-background-clip: text;
   	font-size: 60px;
     }
@@ -33,8 +33,7 @@ body {
     color: var(--textcolor);
     font-size: 20px;
   }
-  
-  
+   
   /* Navagation section */
   nav ul {
     display: flex;
@@ -56,15 +55,16 @@ body {
   /* Main body information and section */
   .main{
     display: flex;
-    background: url(/images/background.jpg);
+    background: url(../images/background.jpg);
     background-size: cover;
     background-position: center;
-    /* margin-bottom: 50px; */
+   
+   
   }
   /* name animation  */
   .title {
     margin: 5%;
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Rock Salt';
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +75,6 @@ body {
   }
      
   /* icon styling above each section */
-  
   .icons {
     margin-bottom: -30px;
     display: flex;
@@ -84,7 +83,6 @@ body {
   }
 
   /* code icons section */
-
  .codecards{
   display:flex;
   justify-content: center;
@@ -100,9 +98,7 @@ body {
   padding-inline: 50px;
  }
 
-
   /* About section  */
-
   .container {
     justify-content: center;
     margin-top: 50px;
@@ -151,8 +147,7 @@ body {
   }
   
   /* projects section*/
-  
-  .work-header {
+   .work-header {
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -168,7 +163,6 @@ body {
   }
   
   /* Card hovering effects*/
-
   /* inspiration: https://codepen.io/NikhilBobade/pen/ExZXaGE */
   .card:hover * {
     transform: scale(1.5);
@@ -218,8 +212,7 @@ body {
     height: 175px;
     object-position: top;
     object-fit: cover;
-    border-radius: 20px;
-       
+    border-radius: 20px;      
   }
   
   .card-content {
@@ -244,7 +237,6 @@ body {
   }
  
   /* Contact info */
-
   .contact-header h3 {
     margin-top:5%;
     font-size: 2em;
@@ -293,11 +285,8 @@ body {
   form{    
     width: 500px;    
   }
-
-
  
 /* Footer Info */
-
    footer {
     margin-top: 55vh;
     display: flex;
@@ -308,7 +297,6 @@ body {
   }
 
   /* media flexing  */
-  
   @media screen and (max-width: 768px) {
     header, main {
       flex-direction: column;
