@@ -10,7 +10,7 @@
 </div>
 
 
-![](images/Portfolioscreenshot.png)
+![](/assets/images/Portfolioscreenshot.png)
 
 
 
